@@ -1,0 +1,8 @@
+.services .card{
+    border-color: transparent;
+}
+
+.services .card .card-footer{
+    background: transparent;
+    border: 0;
+}

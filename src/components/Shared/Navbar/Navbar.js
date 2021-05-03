@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import logo from './../../../images/logo.png'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -12,12 +12,11 @@ const Navbar = () => {
                 </div>
 
                 <nav className="nav">
-
-                    <Link to="/home" className="nav-link active" href="#">Home </Link>
-                    <Link to="/projects" className="nav-link" >Projects</Link>
-                    <a target="_blank" className="nav-link" href="https://drive.google.com/file/d/1yTUs1eKNaIo4p7Nb81sAz-VODoBd2JOV/view">Resume</a>
-                    <a target="_blank" className="nav-link" href="https://medium.com/">Blog</a>                    
-                    <Link to="/contact" className="nav-link">Contact</Link>
+                    <NavLink to="/home" className="nav-link" activeClassName="main-nav-active" href="#">Home </NavLink>
+                    <NavLink to="/projects" className="nav-link" activeClassName="main-nav-active" >Projects</NavLink>
+                    <NavLink to="/resume" className="nav-link" activeClassName="main-nav-active" >Resume</NavLink>                    
+                    <NavLink to="/contact" className="nav-link" activeClassName="main-nav-active" >Contact</NavLink>
+                    <a target="_blank" href="https://medium.com/" className="nav-link" activeClassName="main-nav-active" >Blog</a>
                 </nav>
 
             </div>

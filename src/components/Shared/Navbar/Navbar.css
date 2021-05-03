@@ -1,3 +1,6 @@
 .title-logo{
     height: 50px;
 }
+.main-nav-active{
+    color: rgb(223, 180, 41);
+}

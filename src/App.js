@@ -6,8 +6,9 @@ import {
 } from "react-router-dom";
 import Home from './components/Home/Home/Home';
 import NoMatch from './components/NoMatch/NoMatch';
+import ProjectPage from './components/ProjectPage/ProjectPage/ProjectPage';
 import ContactPage from './components/ContacePage/ContactPage';
-import ProjectPage from './components/ProjectPage/ProjectPage';
+import ResumePage from './components/ResumePage/ResumePage';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="/projects">
             <ProjectPage></ProjectPage>
+          </Route>
+          <Route path="/resume">
+            <ResumePage></ResumePage>
           </Route>
           <Route path="*">
             <NoMatch></NoMatch>

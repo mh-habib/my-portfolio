@@ -3,6 +3,8 @@ import Skills from '../Home/Skills/Skills';
 import Footer from '../Shared/Footer/Footer';
 import Navbar from '../Shared/Navbar/Navbar';
 import resumeImage from './../../images/resume-img.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const ResumePage = () => {
     return (
@@ -21,26 +23,14 @@ const ResumePage = () => {
                         <div class="col-md-3 text-center">
                             <img className="fluid" style={{ borderRadius: '50%' }} src={resumeImage} alt="..." />
                         </div>
-                        <div class="col-md-5">
-                            <table classNam="m-auto">
-                                <tbody>
-                                    <tr>
-                                        <td>E-mail</td><td>:</td><td>habib.tee2009@gmail.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td>LinkedIn</td><td>:</td><td>linkedin.com/in/md-habibullah-habib-43016283</td>
-                                    </tr>
-                                    <tr>
-                                        <td>GitHub</td><td>:</td><td>github.com/mh-habib</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Phone No:</td><td>:</td><td>+8801737143821</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Address</td><td>:</td><td>Rangpur Division, Bangladesh</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="col-md-5 text-center">
+                            <h3>Contact Address</h3>
+                            <p>Rangpur Division, Bangladesh</p>
+                            <p>+8801737143821</p>
+                            <p style={{ fontSize: '20px' }}>
+                                <a href="http://github.com/mh-habib" target="_blank"><button className="btn btn-warning mr-3"><FontAwesomeIcon icon={faGithub} /></button></a>
+                                <a href="http://linkedin.com/in/md-habibullah-habib-43016283" target="_blank"><button className="btn btn-warning"><FontAwesomeIcon icon={faLinkedinIn} /></button></a>                                
+                            </p>
                         </div>
                     </div>
 

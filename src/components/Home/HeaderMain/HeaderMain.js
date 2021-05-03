@@ -13,7 +13,7 @@ const HeaderMain = () => {
     }
     
     return (
-        <main style={{ height: '450px' }} className="row d-flex align-items-center">
+        <main className="row d-flex align-items-center">
             <div className="col-md-5 offset-md-1 px-5">
                 <h3 className="text-dark display-4"><strong>Hello, I'm</strong></h3>
                 <h1 className="text-dark display-4"><strong>MD. HABIBULLAH</strong></h1>
